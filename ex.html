@@ -7,19 +7,21 @@
 </head>
 <body>
     <script>
-
-9) Reescreva o script abaixo utilizando o operador ternário:
-let resultado;
-
-let resultado = ""
-let a = Number(prompt("primeiro numero"))
-let b = Number(prompt("segundo numero"))
-a + b < 4 ? resultado = "Abaixo" : resultado = "Acima"
-console.log (`resultado: ${resultado}`)
-
-
- 
-
+    let turno = prompt("em qual turno voce estuda?M-matutino ou V-Vespertino ou N- Noturno")
+    switch (turno){
+        case "M": 
+        console.log("bom dia")
+        break
+        case "V":
+        console.log("boa tarde")
+        break
+        case "N":
+        console.log("boa noite")
+        break
+        default:
+        console.log("valor invalido")
+        break
+    }
     </script>
 </body>
 </html>
