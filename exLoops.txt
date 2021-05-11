@@ -93,4 +93,17 @@ for(let i = 0; i <0; i++) {
     }
     console.log(`Pares: ${par}\nÍmpares: ${impar}`) 
 
-11)
+11)let dentro = 0
+   let fora = 0
+
+   while(true) {
+    let a = +prompt("Insira um número")
+    if (a < 0) {
+        break }
+    if (10 < a && a < 20) {
+        dentro++ }
+    else { 
+        fora++ }
+}
+   console.log(`${dentro} números estão no intervalo`)
+   console.log(`${fora} números estão fora do intervalo`)
