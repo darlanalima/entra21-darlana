@@ -1,0 +1,96 @@
+1) let i = 0
+        while (i < 10) {
+           console.log(i)
+           i++}
+
+ let i = 0
+        do {
+            console.log(i)
+            i++
+        } while (i < 10)
+
+  for (let i = 0; i < 10; i++) {
+            console.log(i)
+        }  
+
+ 2)let i = 0
+     while (i < 10) {
+      console.log(`estou aparecendo na tela pela ${i + 1} vez`)
+           i++}
+
+   let i = 0
+        do {
+            console.log(`estou aparecendo na tela pela ${i} vez`)
+            i++
+        } while (i < 11)        
+
+    for (let i = 0; i < 11; i++) {
+            console.log(´estou aparecendo na tela pela ${i} vez)
+        }  
+
+3) for(let i = 10; i >= 0; i--){
+            console.log(i)
+        } 
+        console.log("FIM!") 
+
+4) for(let i = 0; i<3; i++){
+     let numero1= +(prompt("digite o numero 1"))
+     let numero2= +(prompt("digite o numero 2"))
+     let subtracao= numero1- numero2
+       console.log(`${numero1} - ${numero2} = ${subtracao}`)
+ } 
+
+5)let i = 0
+        while(i < 100000){
+            console.log(i)
+            i = i + 1000
+        }
+
+6) let soma = 0
+   let i = 0
+     while(i < 5){
+   let numero1 = +prompt("Digite o as notas")
+
+     soma += numero1 
+         i++
+        } 
+    let media = soma / 5
+       console.log(`Soma: ${soma} \nMédia: ${media.toFixed(2)}`)
+
+7) let N = +prompt("digite o valor de N"), impares = ""
+      for(let i = 0; i <=N; i++){
+   if(N % 2 != 0){
+      impares += `${i}, ` 
+   }
+  }
+    console.log(impares)
+
+8)let numero = +prompt("Digite um número!")
+    let soma = 0
+    for (let i = 0; i <= 10;i++){
+        soma = i * numero
+        console.log(`${numero} x ${i} = ${soma}`)
+        soma = 0  
+    } 
+
+9)let j = 0 
+for(let i = 0; i <0; i++) {
+    numero = +prompt("digite um numero")
+    if(numero < 0){
+        i++
+    }
+    }
+   
+10) let par = 0
+    let impar = 0
+    for(let i = 0; i < 10; i++){
+        let numero = +prompt("Digite um número")
+            if(numero % 2 == 0){
+                par++
+            }else{
+                impar++
+            }
+    }
+    console.log(`Pares: ${par}\nÍmpares: ${impar}`) 
+
+11)

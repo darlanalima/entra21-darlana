@@ -11,8 +11,6 @@
      true
      console.log(5 >= "5") // ?
      true
-     console.log(5 >= "5") // ?
-     true 
      console.log("apple" > "pineapple")
      false
      console.log("2" > "12")
@@ -31,12 +29,10 @@
      if (valorA > 10) {
 
      console.log("O número é maior que 10!")
-
-        }
-
+     } else {
      console.log("programa finalizado")
-    
-    
+     }
+
 4)  let numero = Number(prompt("digite um numero"))
      if (numero % 2 === 0){
      alert(numero / 2)    
