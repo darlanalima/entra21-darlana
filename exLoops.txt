@@ -127,7 +127,7 @@ console.log(calculo)
     console.log(mostra)
 }
 
-14) let numero = +prompt("Digite aqui um numero")
+14) let numero = +prompt("Digite um numero")
 let resultado = numero
 for (let i = numero - 1; i > 0; i--) {
     resultado *= i
