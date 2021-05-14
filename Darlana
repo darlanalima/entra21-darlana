@@ -259,3 +259,30 @@
     console.log("valor invalido")
     break
 }
+
+9 let vetor = []  
+        for(let i = 0 ; i < 8; i++){
+            vetor[i]= +prompt("digite um numero")
+        }
+
+        let x, y
+        while (true) {
+            x = +prompt("Digite o valor de X")
+            if (x > 7 || x < 0) {
+                alert("Você digitou um valor inválido")
+                continue
+            }   
+            break     
+        }
+
+        while (true) {
+            y = +prompt("Digite o valor de Y")
+            if (y > 7 || y < 0) {
+                alert("Você digitou um valor inválido")
+                continue
+            }
+            break
+        }
+
+        let soma = vetor[x] + vetor[y]
+        console.log(`A soma do vetor na posição ${x} e ${y} = ${soma}`)
