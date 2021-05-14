@@ -93,4 +93,67 @@ for(let i = 0; i <0; i++) {
     }
     console.log(`Pares: ${par}\nÍmpares: ${impar}`) 
 
-11)
+11)let dentro = 0
+   let fora = 0
+
+   while(true) {
+    let a = +prompt("Insira um número")
+    if (a < 0) {
+        break }
+    if (10 < a && a < 20) {
+        dentro++ }
+    else { 
+        fora++ }
+}
+   console.log(`${dentro} números estão no intervalo`)
+   console.log(`${fora} números estão fora do intervalo`)
+   
+12) let media = 0
+let quantidade = 0
+while(true) {
+    let i = +prompt("Insira um número")
+    if (i < 0) {
+        break }
+
+    quantidade++
+    media += i
+    calculo = media / quantidade  
+}
+console.log(calculo)
+
+13)for (let i = 1; i <= 15; i++) {
+    numero = 7
+    let mostra = numero * i
+    console.log(mostra)
+}
+
+14) let numero = +prompt("Digite um numero")
+let resultado = numero
+for (let i = numero - 1; i > 0; i--) {
+    resultado *= i
+}
+console.log(resultado)
+
+15) let salarioMedia = 0
+let filhosMedia = 0
+let salarioMaior = 0
+let contagem = 0
+
+while (true) {
+    let info = +(prompt("digite o seu salário:"))
+    let info2 = +prompt("digite quantos filhos você tem:")
+
+    if (info < 0) {
+        break
+    }
+    contagem++
+    if (info > salarioMaior) {
+        salarioMaior = info
+    }
+    
+    salarioMedia += info
+    filhosMedia += info2
+}
+console.log(`Média salarial: ${(salarioMedia / contagem).toFixed(2)}`)
+console.log(`Média de filhos: ${(filhosMedia / contagem).toFixed(2)}`)
+console.log(`Maior salário: ${salarioMaior.toFixed(2)}`) 
