@@ -10,5 +10,289 @@
         }
      }
      console.log(`o vetor possui ${pares} valores pares`)
+ 
+  
+ 2)     let posicao= [] 
+        let numeros = []
+        let maiorNumero = 0
+        for(let i = 0;i < 5;i++){
+            let numero = +prompt("Digite um número")
+            if (numero > maiorNumero){
+                maiorNumero = numero
+                numeros.push(maiorNumero)
+                posicao = (i)
+            }
+            numeros[i] = numero
+        }
+        console.log(numeros)
+        console.log(`Maior número é ${maiorNumero}`)
+        console.log(`Está na posição numero ${posicao}`)
 
-2)     
+ 3)
+       let vetor = []
+       let maiorNumero = 0
+       let menorNumero = 1
+
+       for(let i = 0; i < 10; i++ ){
+           vetor[i] = +prompt("Digite um número:")
+       
+            if (vetor[i] > maiorNumero){
+                maiorNumero = vetor[i]
+            }else if(vetor[i] < menorNumero){
+                menorNumero = vetor[i]
+            }
+        
+        }
+
+        console.log(`O maior número é ${maiorNumero}`)
+        console.log(`O menor número é ${menorNumero}`)
+      
+            
+     
+ 4)
+            let vetor = []
+            let vetorinverso = []
+            let contador = 4
+                                                             
+            for(let i = 0; i<5; i++){
+                vetor[i] = +prompt("Digite um número:")
+                vetorinverso[contador] = vetor[i] 
+                contador--
+            
+            }
+
+            console.log (vetor)
+            console.log (vetorinverso)                                                                                
+
+ 5) let nomes = [];
+        let achou = false;
+        for (let i = 0; i < 5; i++){
+            nomes[i] = prompt(`Informe o ${i + 1} nome`);
+        }
+        let pesquisa = prompt("Informe o nome a ser pesquisado");
+        for (let j = 0; j < 5; j++){
+            if (pesquisa == nomes[j]){
+                console.log("ACHEI");
+                achou = true;
+                break;
+            }
+        }
+        if(!achou){
+            console.log("NÃO ACHEI");
+        }
+
+ 6)
+            let a = [1, 0, 5, -2, -5, 7]
+            let soma = a[0] + a[1] + a[5]
+            console.log = (soma)
+            a[4] = 100
+            console.log = (`${a[0]}\n${a[1]}\n${a[2]}\n${a[3]}\n${a[4]}\n${[5]}`)
+
+
+ 7)
+        let vetor = []
+        let quadrado = []
+        for(let i = 0; i < 5 ; i++){
+            vetor[i] = +prompt("Digite um número:")
+           quadrado[i] = vetor[i] **2
+        }
+        
+        console.log  (vetor)
+        console.log  (quadrado)
+       
+ 8)
+        let vetor = []
+        let contador = 0
+        let numero = 0
+        for( let i = 0; i < 6; i++){
+        let numero = +prompt ("Digite um número par")
+
+        if(numero % 2 == 0){
+            vetor[contador] = numero
+            contador++                                              
+         }
+        }
+
+        let j = vetor.length - 1
+        while (j >= 0 ){
+            console.log (vetor[j])
+            j--
+
+        }
+
+ 9)  let vetor = []  
+        for(let i = 0 ; i < 8; i++){
+            vetor[i]= +prompt("digite um numero")
+        }
+
+        let x, y
+        while (true) {
+            x = +prompt("Digite o valor de X")
+            if (x > 7 || x < 0) {
+                alert("Você digitou um valor inválido")
+                continue
+            }   
+            break     
+        }
+
+        while (true) {
+            y = +prompt("Digite o valor de Y")
+            if (y > 7 || y < 0) {
+                alert("Você digitou um valor inválido")
+                continue
+            }
+            break
+        }
+
+        let soma = vetor[x] + vetor[y]
+        console.log(`A soma do vetor na posição ${x} e ${y} = ${soma}`)
+
+ 10)  let vetor = []
+        let soma = 0
+        let quantNegativos = 0
+        for(let i = 0;i < 10;i++){
+            vetor[i] = +prompt("Digite os números")
+            if (vetor[i] > 0){
+                soma += vetor[i]
+            }else{
+                quantNegativos++
+            }
+        }
+        console.log(`Quantidade de negativos: ${quantNegativos}`)
+        console.log(`Soma dos positivos: ${soma}`)
+
+ 11) let vetor = [],
+        posicaoMaior = 0,
+        posicaoMenor = 0
+
+    for (let i = 0; i < 5; i++) {
+        vetor[i] = +prompt("Digite um número")
+        if (vetor[i] > vetor[posicaoMaior]) {
+            posicaoMaior = i
+        } else if (vetor[i] < vetor[posicaoMenor]) {
+            posicaoMenor = i
+        }
+    }
+
+    console.log(`Vetor: ${vetor}`)
+    console.log(`Posição do maior valor: ${posicaoMaior}`)
+    console.log(`Posição do menor valor: ${posicaoMenor}`)
+}
+       
+ 12) let dadosLancados = [],
+        contadorLancamentos = [0, 0, 0, 0, 0, 0]
+
+    for (let i = 0; i < 100; i++) {
+        dadosLancados[i] = Math.floor(Math.random() * (7 - 1)) + 1
+
+        switch(dadosLancados[i]) {
+            case 1:
+                contadorLancamentos[0]++
+                break
+            case 2:
+                contadorLancamentos[1]++
+                break
+            case 3:
+                contadorLancamentos[2]++
+                break
+            case 4:
+                contadorLancamentos[3]++
+                break
+            case 5:
+                contadorLancamentos[4]++
+                break
+            case 6:
+                contadorLancamentos[5]++
+                break
+        }
+    }
+
+    for (let i = 0; i < 6; i++) {
+        console.log(`Quantidade de vezes que o número ${i + 1} foi lançado: ${contadorLancamentos[i]}`)
+    }            
+}
+
+ 13) let notas = [],
+        i = 0
+
+    while (true) {
+        nota = +prompt(`Digite a nota do ${i + 1} aluno`)
+
+        if (nota < 0) break
+        
+        notas[i] = nota                
+        i++
+    }
+
+    let maiorNota = 0,
+        acumuladorNotas = 0                
+    for (let nota of notas) {
+        if (nota > maiorNota) maiorNota = nota
+
+        acumuladorNotas += nota
+    }   
+
+    let media = acumuladorNotas / notas.length
+
+    console.log(`Notas: ${notas}`)
+    console.log(`Média da turma: ${media.toFixed(2)}\nMaior nota: ${maiorNota}`)
+
+ 14)    let vetor1 = [],
+        vetor2 = []
+
+    for (let i = 0; i < 5; i++) {
+        vetor1[i] = prompt(`Digite o valor da posição ${i + 1} do primeiro vetor`)
+    }
+
+    let iguais = true
+    for (let i = 0; i < 5; i++) {
+        vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)
+
+        if (vetor1[i] != vetor2[i]) iguais = false
+    }            
+
+    console.log(`Vetor 1: ${vetor1}\nVetor 2: ${vetor2}`)
+    iguais ? console.log("Os vetores são iguais") : console.log("Os vetores são diferentes")
+
+ 15) let vetor1 = [],
+        vetor2 = []
+
+    for (let i = 0; i < 5; i++) {
+        vetor1[i] = prompt(`Digite o valor da posição ${i + 1} do primeiro vetor`)
+    }
+
+    let interseccao = []
+    for (let i = 0; i < 5; i++) {
+        vetor2[i] = prompt(`Digite o valor da posição ${i + 1} do segundo vetor`)                
+        
+        for (let j = 0; j < 5; j++) {
+            if (vetor1[j] === vetor2[i]) {                        
+                interseccao.push(vetor1[j])
+                break
+            }
+        }
+    }            
+
+    console.log(`Vetor 1: [${vetor1}]\nVetor 2: [${vetor2}]\nIntersecção: [${interseccao}]`)  
+
+ 16) 
+      let n1 = +prompt("digite o primeiro nunero")  
+      let n2 = +prompt("digite o segundo numero")
+        aux = n1
+
+        if(n1 > n2){
+            n1 = n2
+            n2 = aux
+        }
+         for(let i = n1; i <= n2; i+=2){
+             console.log(i)
+         }     
+
+17) 
+
+
+
+
+
+
+
