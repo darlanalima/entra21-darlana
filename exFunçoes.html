@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>    
+1//
+
+    "use strict"
+    let ePositivo = numero => numero > 0
+    let numero = +prompt("digite um numero")
+    console.log(ePositivo(numero))
+
+
+
+2 //
+
+    "use strict"
+    let numero = (a , b) => `${a} ${b}`
+     let numero = +prompt("digite um numero")
+    console.log(`o menor valor ${a, b} ${b, a}`)
+
+
+forma 2 
+    let a = +prompt("Digite o primeiro valor:")
+        b = +prompt("Digite o segundo valor:")
+        function minimo (a, b){
+            if( a < b ){
+                return a
+            }
+            return b
+        }
+
+        console.log(minimo(a, b))
+   
+ 3 //
+
+    "use strict"
+    function potencia(a,b){
+            return(a**b)
+        }
+        let a = +prompt("Digite o valor A")
+        let b = +prompt("Digite o valor B")
+        console.log(potencia(a,b))
+     
+  4 //
+
+    "use strict"
+    function media(a, a2 , a3){
+        return((a + a2 + a3) /3)
+      }
+    let a = +prompt("digite a primeira nota")
+    let a2 = +prompt("digite a segunda nota")
+    let a3 = +prompt("digite a terceira nota")
+     
+      console.log(media(a, a2 , a3))
+   
+ 5 //
+ 
+    "use strict"
+
+    function mediaConceito(media){
+    if(0.0 <= 4.9){
+        return "D"
+    }  else if(media >= 5.0 && media <= 6.9){
+        return "C"
+    }  else if (media >= 7.0 && media <= 8.9){
+        return "B"
+    } else {
+         return "A"
+    }
+}
+    let media = +prompt("digite a media")
+    let mediaLetra = mediaConceito(media)
+     console.log(mediaLetra)
+
+ 6 //
+
+    "use strict"
+ 
+      let altura = +prompt("digite sua altura")
+      let sexo = +prompt("digite F para feminino e M pra masculino")
+
+      function pesoIdeal(sexo , altura){ 
+          switch(sexo){
+              case "M":
+               pesoIdealHomens = (72.7 * altura) - 58 
+                return pesoIdealHomens 
+                break
+
+
+ 7 //
+    "use strict"
+
+
+    let pegarPrimeiroEUltimo = vetor => vetorResposta = [vetor[0], vetor[vetor.length-1]]
+        console.log(pegarPrimeiroEUltimo([1,2,3,4,5]))
+
+
+ 8 //
+    "use strict"
+    let mostrarSimbolo = x =>{
+            let str = ""
+            for (let i = 0; i < x; i++){
+                str += "#"
+            }
+            return str
+        }
+        let x = prompt("Digite um número")
+        console.log(mostrarSimbolo(x))
+
+9 //
+    "use strict"
+{
+    let dizOi = () => alert("Oi")
+    for(let i = 0; i < 3; i++)
+    dizOi()
+}
+
+10 //
+
+let pegarIdade = (ano, anoAtual) => anoAtual - ano
+        
+        let ano = prompt("Digite o ano em que você nasceu:"),
+        anoAtual = prompt("Digite o ano atual:")
+        console.log(pegarIdade(ano, anoAtual))
+11 //
+
+let vetor = []
+        for (let i = 0; i < 5; i++){
+            vetor[i] = Number(prompt(`Digite o ${i+1} item do vetor:`))
+        }
+        let trocarUnsElemntosDoVetorAiSeiLa = vetor => {
+            vetor[1] = 10
+            vetor[2] = 30
+            return vetor
+        }
+        vetor2 = trocarUnsElemntosDoVetorAiSeiLa(vetor)
+        console.log (vetor, vetor2)
+
+ 12 //
+
+ let vetor = []
+      
+      function cadastroNumerosInteiros (){
+          for (let i = 0; i < 50; i++) {
+          let numero = Math.floor(Math.random() *1000)+1
+            vetor[i]=numero
+          }
+      }
+      function maiorMenorValor (){
+          let maior = Math.max.apply(null, vetor)
+          console.log(`O maior número da função é ${maior}`)
+          let menor = Math.min.apply(null, vetor)
+          console.log(`O menor número da função é ${menor}`)
+      }
+      cadastroNumerosInteiros()
+      maiorMenorValor()
+
+
+   
+ 13 //
+     let ano = +prompt("digite o ano que voce nasceu")
+     let dia = +prompt("digite o dia do seu nascimento")
+     let mes = +prompt("digite o mes do seu parabens :)")
+
+    function dataNascimento(dia, mes, ano){
+      return 365 * ano + mes * 30 + dia 
+}
+    tempoVida = dataNascimento(dia, mes, ano)
+    console.log(`voce tem ${tempoVida} dias de vida`)
+
+14 //
+
+    function valorInteiro()
+      let numero = 
+      
+
+
+
+
+
+
+
+
+
+     </script>
+</body>
+</html>
