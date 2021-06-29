@@ -1,0 +1,205 @@
+body{
+    background-image: linear-gradient(45deg , #e37682 15%, #5f4d93 85%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    .h1,h2,h3,h4,h5,h6,p,a {
+        font-weight: 300;
+    }
+
+    .wrapper {
+        width: 95%;
+        margin: auto;
+    }
+
+    .main-header{
+        padding: 96px 64px 48px;
+        text-align: center;
+    }
+
+    .main-header h1{
+        font-size: 52px;
+        color: white;
+        margin: 0 0 13px;
+    }
+
+    .main-header p{
+        color: #FFFFFFA6;
+        font-size: 20px;
+    }
+
+    .link{
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px dotted;
+    }
+
+    .link:hover{
+        color: white;
+        border: none;
+    }
+
+    {
+        margin: 0;
+    }
+
+    .nav {
+  
+        color: #636363;
+        background-color: #f7f7f7;     
+        text-align: center; 
+        width: 64em;
+        padding: 1em;
+       cursor: default;
+    }
+
+    .nav ul{
+     display:flex;
+     justify-content: center;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav ul li a.active{
+        background-color: #ffffff;
+        box-shadow: none;
+    }
+    
+    nav ul a {
+        text-decoration: none;
+        display: inline-block;
+        padding:0 1.25em;
+        color:#636363;
+    }
+ .nav ul li a{
+     line-height: 1.25em;
+    border-radius: 8px;
+ }
+ 
+   .main {
+ background-color: #ffffff; 
+ padding: 4em 4em 2em 4em;
+ font-size: 100%;
+ font: inherit;
+ color: #636363;
+ box-sizing: inherit;
+ border: 0;
+ margin: 0;
+}
+
+.body {
+    -webkit-text-size-adjust: none;
+}
+
+.spotlight .image img {
+    display: block;
+    border-radius: 100%;
+    width: 16em;
+}
+
+#main .spotlight .image {
+    border-color: #dddddd;
+}
+.spotlight .image {
+    display: inline-block;
+    padding: 0.65em;
+    border-radius: 100%;
+    border: solid 1px;
+}
+
+.image{
+    position: relative;
+}
+.spotlight {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0 0 2em 0;
+}
+
+ul.actions {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+}
+
+#main .button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px #dddddd;
+    color: #636363 !important;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    height: 2.75em;
+    line-height: 2.75em;
+    min-width: 9.25em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    
+}
+#main > .main {
+
+    border-top: solid 1px #dddddd;
+    text-align: center;
+}
+
+.features{
+    text-align: center;
+}
+
+.features i {
+ font-size: 50px;
+ border-radius: 100%;
+ border: 1px solid gray;
+ padding: 10px;
+ 
+}
+.features i::before{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 1px solid gray;
+    line-height: 100px;
+    border-radius: 100%;
+
+}
+.features li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.style1{
+    color: #efa8b0;
+}
+
+.style2{
+    color: #a89cc8;
+}
+
+.style3{
+    color: #8cc9f0;
+}
+
+.statistic .style1::before{
+    box-sizing: inherit;
+}
+<span class="icon solid fa-laptop"></span>
+<strong>4,096</strong>

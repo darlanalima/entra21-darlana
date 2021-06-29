@@ -1,0 +1,24 @@
+<a name="list">the list</a>
+        <ul>
+            <li><a href="http://google.com">http://google.com</a></li>
+            <li><a href="/tutorial">/tutorial.html</a></li>
+            <li><a href="local/path">local/path</a></li>
+            <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+            <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+            <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+        </ul>
+
+        document.querySelectorAll('ul a')
+        let links = document.querySelectorAll('ul a') --> colocou os a dentro de links
+        for (link of links) {
+            let href = link.getAttribute("href")
+            console.log(href)
+        }
+        for (link of links) {
+            let href = link.getAttribute("href")
+        
+            if (href.includes("://") && !href.startsWith("http://internal.com")) {
+        
+                link.style.color = "orange"
+            }
+        }
