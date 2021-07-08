@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        rodaNasTeclas(
+            () => alert("Olá!"),
+            "KeyZ",
+            "KeyW"
+        )
+
+        function rodaNasTeclas(func, ...codes) {
+            let teclasPressionadas = 
+
+            document.addEventListener('keydown', function(event) {
+                teclasPressionadas.add(event.code)
+
+                for (let code of codes) {
+                    if (!teclasPressionadas.has(code)) {
+                        return
+                    }
+                }
+
+                teclasPressionadas.clear()
+
+                func()
+            })
+
+            document.addEventListener('keyup', function(event) {
+                teclasPressionadas.delete(event.code)
+            })
+        }
+
+        rodaNasTeclas(
+            () => alert("Hello!"),
+            "KeyQ",
+            "KeyW",
+            "KeyZ"
+        )
+
+    </script>
+
+
+</body>
+
+</html>
