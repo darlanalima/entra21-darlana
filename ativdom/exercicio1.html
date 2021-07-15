@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    </style>
+<body>
+    <form>
+        <ul>
+            <li>
+                <label for="uname">Nome de usuário</label>
+                <input type="text" name="uname" id="uname" minlength="5" maxlength="20" required>
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </li>
+            <li>
+                <label for="phone">Telefone:</label>
+                <input type="" name="phone" id="phone" minlength="0" maxlength="15" required>
+            </li>
+            <li>
+                <label for="comment">Comentário:</label>
+                <textarea name="comment" id="comment" maxlength="200" required> 
+                </textarea>
+            </li>
+            <li>
+                <button>Enviar comentário</button>
+            </li>
+        </ul>
+    </form>
+
+    <script>
+  
+
+
+let form = document.querySelector("form")        
+        
+        form.addEventListener("submit", (event) => {            
+            if (!form.email.value.includes("@")) {
+                alert("E-mail invalido")
+                event.preventDefault()
+            }
+        })
+        
+    </script>
+</body>
+
+</html>
