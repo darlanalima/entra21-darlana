@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erro</title>
+</head>
+<body>
+    <script>
+      /*  Crie uma função dobrarEm5Segundos(numero) que dobre o valor de um número. Se o número recebido for ímpar a função deve lançar
+        um TypeError com a mensagem "O valor deve ser numérico". O script deve chamar a função e mostrar o resultado ou o erro. Após a execução da função
+        deve ser mostrado uma mensagem "Finalizando o programa...".*/
+        class UserTypeError extends Error {
+            constructor(message) {
+                super(message);
+                this.name = "UserTypeError";
+            }
+        }
+      class numero {
+          constructor(numero){
+          this.numero = numero;
+          }
+      }
+    
+      
+        function dobrarEm5Segundos(numero){
+       if(numero % 2 === 1){
+           throw new UserTypeError("o valor deve ser numérico")
+       }
+        }
+console.log("Finalizando o programa...")
+    </script>
+</body>
+</html>

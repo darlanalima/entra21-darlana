@@ -7,6 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+///////////////////////////////////////////////////////////////////
+    2) function displayTime() {
+        let date = new Date();
+        let time = date.toLocaleTimeString();
+        document.getElementById('demo').textContent = time;
+     }
+     
+     const createClock = setInterval(displayTime, 1000);
+
+/////////////////////////////////////////////////////////////////////
+
+ 1)  
+     let conjunto = new Set(["1", "2", "2", "3", "3", "4", "5"])
+     console.log(conjunto)
+     console.log(Array.from(conjunto))
+
+////////////////////////////////////////////////////////////////////
+
+     1) function imprimeNumeros(comeco, fim) {
+        let tempo = setInterval(() => {
+            console.log(comeco)
+            comeco++
+            if(comeco > fim) clearInterval(tempo)}, 100)
+    }
+     
+////////////////////////////////////////////////////////////////////
+
+
+
+
+
 </body>
 </html>

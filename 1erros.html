@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erros</title>
+</head>
+<body>
+    <script>
+        /* Crie uma função somar(n1, n2) que some dois números caso o resultado seja par a função deve lançar um erro OddNumberError que
+        tem a mensagem "O número é ímpar". O script deve chamar a função e mostrar o resultado ou o erro. Após a execução da função
+        deve ser mostrado uma mensagem "Finalizando o programa..."
+        class OddNumberError extends Error {
+            constructor(message) {
+                super(message);
+                this.name = "OddNumberError";
+            }
+        }
+
+    let n1 = 2
+    let n2 = 1
+        function somar(n1,n2){
+          if(n1 + n2 % 2 == 0){
+            throw new OddNumberError("o número é par")
+          }
+          try {
+          n1 
+          n2
+        } catch (err) {
+            if (err instanceof OddNumberError) {
+                alert(`numero impar`)
+            } else {
+                console.log(err)
+            }
+        }
+        alert("finalizando o progama")
+    }*/
+    class OddNumberError extends Error{
+            constructor (message){
+                super (message)
+                this.name = "OddNumberError"
+            }
+        }
+        class Calc {
+                constructor (n1, n2){
+                    this.n1 = n1;
+                    this.n2 = n2;
+                }
+
+                static soma(n1, n2) {
+                    const resultado = n1 + n2;
+                    if (resultado % 2 === 1){
+                        throw new OddNumberError("O número é ímpar")
+                    } 
+                    return resultado 
+                }
+        }
+
+    try {
+        let resultado = Calc.soma(8, 3)
+        console.log(`Resultado é ${resultado}`)
+    } catch (error) {
+        if (error.name === "OddNumberError"){
+            console.log(`Erro conhecido: ${error.message}`)
+        } else {
+            console.log(`Erro desconhecido: ${error.message}`)
+        }
+        
+    }
+    console.log("Finalizando o programa...")
+    
+    </script>
+</body>
+</html>
