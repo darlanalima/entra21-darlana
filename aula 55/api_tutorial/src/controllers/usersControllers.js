@@ -97,10 +97,25 @@ async function deleteUser(req, res, next) {
         res.status(500).json({ message: "server error" });
     }
 }
+
+async function createPost() {
+   const userId = req.params.id;
+   const {title, content} = req.body;
+   const file = req.file
+    try {
+        console.log(file);
+        res.end();
+    } catch (error) {
+        console.log(err);
+        res.status(500).json({ message: "server error" });
+    }
+}
+
 module.exports = {
     getAllUsers,
     getUserById,
     createUser,
     updateUser,
-    deleteUser
+    deleteUser,
+    createPost
 };
