@@ -1,0 +1,58 @@
+DROP TABLE IF EXISTS contratos;
+DROP TABLE IF EXISTS imoveis;
+DROP TABLE IF EXISTS proprietarios;
+DROP TABLE IF EXISTS locatarios;
+CREATE TABLE IF NOT EXISTS proprietarios (
+id SERIAL PRIMARY KEY,
+	nome text NOT NULL UNIQUE,
+	cpf text NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS locatarios (
+id SERIAL PRIMARY KEY,
+	nome text NOT NULL UNIQUE,
+	cpf text NOT NULL UNIQUE
+);
+CREATE TABLE IF NOT EXISTS imoveis (
+id SERIAL PRIMARY KEY,
+numero_quartos integer NOT NULL,
+	numero_banheiros integer NOT NULL,
+	area numeric NOT NULL,
+	piscina boolean NOT NULL,
+	churrasqueira boolean NOT NULL
+);
+CREATE TABLE IF NOT EXISTS contratos (
+id SERIAL PRIMARY KEY,
+	data_inicio date NOT NULL,
+	data_termino date NOT NULL,
+	dia_vencimento date NOT NULL,
+	valor numeric NOT NULL,
+	observaçoes text NOT NULL
+);
+INSERT INTO
+proprietarios (nome, valor)
+VALUES
+('pedro', 1),
+('769.131.738-73', 1);
+
+INSERT INTO
+locatarios (nome,valor)
+VALUES
+('joao', 1),
+('012.854.788-00', 1);
+INSERT INTO
+imoveis (nome, valor)
+VALUES
+('numero_quartos', 3),
+('numero_banheiros',2),
+('area', 250),
+('piscina', sim),
+('churrasqueira', sim);
+
+INSERT INTO
+contratos (nome , valor)
+VALUES
+('data_incio', 17/08/2021),
+('data_termino', 17/05/2022),
+('valor',1200),
+('observações',0);
